@@ -16,13 +16,13 @@
         <header>
             <h1>GYM <span class="txtRojo">KING</span> </h1>
             <nav id="nav">
-                <a href="#inicio">Inicio</a>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#comodidades">Comodidades</a>
-                <a href="#galeria">Galeria</a>
-                <a href="#Equipo">Equipo</a>
-                <a href="#Contacto">Contacto</a>
+                <a href="#inicio" onclick="seleccionador()">Inicio</a>
+                <a href="#nosotros" onclick="seleccionador()">Nosotros</a>
+                <a href="#servicios" onclick="seleccionador()">Servicios</a>
+                <a href="#comodidades" onclick="seleccionador()">Comodidades</a>
+                <a href="#galeria" onclick="seleccionador()">Galeria</a>
+                <a href="#equipo" onclick="seleccionador()">Equipo</a>
+                <a href="#contacto" onclick="seleccionador()">Contacto</a>
             </nav>
             <div class="redes">
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -30,7 +30,7 @@
                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="#"><i class="fa-brands fa-tiktok"></i></a>
             </div>
-            <div class="nav-responsive" id="icon-nav">
+            <div class="nav-responsive" id="icon-nav" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -43,7 +43,7 @@
                 <h2>NO PAIN <span class="txtRojo">NO GAIN</span> </h2>
                 <p>No hay límites para lo que puedes lograr en el gym!</p>
                 <a href="#nosotros" class="btn-mas">
-                    <i class="fa-regular fa-circle-down"></i>
+                    <i class="fa-solid fa-circle-chevron-down"></i>
                 </a>
             </div>
             <div class="opciones">
@@ -112,7 +112,7 @@
 
     <!-- Seccion servicios -->
     <section id="servicios" class="servicios" >
-        <div class="contenido-seccion">
+        <div class="contenido-servicios">
             <div class="fila">
                 <div class="col">
                     <div class="contenedor-titulo">
@@ -126,10 +126,12 @@
                     </div>
                     <p class="p-especial">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus quod provident libero, nam corrupti, adipisci ea inventore cum aliquid asperiores pariatur harum sunt. Tempore expedita atque quos ipsum nisi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus
+                    quod provident libero, nam corrupti, adipisci ea inventore cum aliquid asperiores 
+                    pariatur harum sunt. Tempore expedita atque quos ipsum nisi.</p>
                 </div>
                 <div class="col">
-                    <img src="img/servicios.png" alt="">
+                    <img src="img/servicios2.png" alt="">
                 </div>
             </div>
         </div>
@@ -177,7 +179,7 @@
     <section id="comodidades" class="comodidades">
         <div class="fila">
             <div class="col">
-                <img src="img/nosotros.png" alt="">
+                <img src="img/comodidades.png" alt="">
             </div>
             <div class="col">
                 <div class="contenedor-titulo">
@@ -213,24 +215,24 @@
             </div>
             <div class="fila">
                 <div class="col">
-                    <img src="img/f1.jpg" alt="">
+                    <img src="img/galeria1.jpg" alt="">
                 </div>
                 <div class="col">
-                    <img src="img/f2.jpg" alt="">
+                    <img src="img/galeria2.jpg" alt="">
                 </div>
                 <div class="col">
-                    <img src="img/f3.jpg" alt="">
+                    <img src="img/galeria3.jpg" alt="">
                 </div>
             </div>
             <div class="fila">
                 <div class="col">
-                    <img src="img/f4.jpg" alt="">
+                    <img src="img/galeria4.jpg" alt="">
                 </div>
                 <div class="col">
-                    <img src="img/f5.jpg" alt="">
+                    <img src="img/galeria5.jpg" alt="">
                 </div>
                 <div class="col">
-                    <img src="img/f6.jpg" alt="">
+                    <img src="img/galeria6.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -250,7 +252,7 @@
             </div>
             <div class="fila">
                 <div class="col">
-                    <img src="img/e1.png" alt="">
+                    <img src="img/entrenador1.png" alt="">
                     <div class="info">
                         <h2>MARCOS</h2>
                         <p>Fitness - Pilates - Yoga</p>
@@ -263,7 +265,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <img src="img/e2.png" alt="">
+                    <img src="img/entrenador2.png" alt="">
                     <div class="info">
                         <h2>PATRICIA</h2>
                         <p>Fitness - Pilates - Yoga</p>
@@ -276,7 +278,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <img src="img/e3.png" alt="">
+                    <img src="img/entrenador3.png" alt="">
                     <div class="info">
                         <h2>JUAN</h2>
                         <p>Fitness - Pilates - Yoga</p>
@@ -319,21 +321,22 @@
             <div class="fila-datos">
                 <div class="col">
                     <i class="fa-solid fa-location-dot"></i>
-                    Avenida Morro 255
+                    TULUÁ VALLE CALLE 14 #29-23
                 </div>
                 <div class="col">
                     <i class="fa-solid fa-phone"></i>
-                    2664 - 456788
+                    3177848267
                 </div>
                 <div class="col">
                     <i class="fa-regular fa-clock"></i>
-                    Lunes a Sábado, 8:00h - 24:00h
+                    Lunes a Domingo, 5:00am - 12:00am
                 </div>
             </div>
         </div>
 
     </section>
 
+    <!-- SECCION INFO -->
     <footer>
         <div class="info">
             <p>2023 - <span class="txtRojo">THE GYM</span> Todos los derechos reservados</p>
